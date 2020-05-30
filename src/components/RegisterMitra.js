@@ -169,9 +169,9 @@ class RegisterMitra extends Component {
 			                  <input type="text" name="registUsername" placeholder="Username" value={this.state.registUsername} onChange={this.handleChange} required />
 			                  <input type="email" name="registEmail" placeholder="Alamat Email" value={this.state.registEmail} onChange={this.handleChange} required />
 			                  <input type="password" name="registPassword" placeholder="Password" value={this.state.registPassword} onChange={this.handleChange} required />
-		                  	  <input type="text" name="registTempat" placeholder="Tempat Lahir" value={this.state.registTempat} onChange={this.handleChange} required />
-			                  <p>Tanggal Lahir: </p>
-			                  <input type="date" name="registTanggalLahir" placeholder="Tanggal Lahir" value={this.state.registTanggalLahir} onChange={this.handleChange} required />
+		                  	  {/*<input type="text" name="registTempat" placeholder="Tempat Lahir" value={this.state.registTempat} onChange={this.handleChange} required />*/}
+			                  {/*<p>Tanggal Lahir: </p>*/}
+			                  {/*<input type="date" name="registTanggalLahir" placeholder="Tanggal Lahir" value={this.state.registTanggalLahir} onChange={this.handleChange} required />*/}
 		                  	  <select name="registJK" onChange={this.handleChange} required>
 							    <option>Pilih Jenis Kelamin</option>
 							    <option value="Laki-Laki">Laki-Laki</option>
@@ -180,10 +180,10 @@ class RegisterMitra extends Component {
 		                  	  <br/>
 		                  	  <br/>
 		                  	  <input type="text" name="registPendidikanTerakhir" placeholder="Pendidikan Terakhir" value={this.state.registPendidikanTerakhir} onChange={this.handleChange} required />
-			                  <input type="text" name="registPekerjaanSekarang" placeholder="Pekerjaan Sekarang" value={this.state.registPekerjaanSekarang} onChange={this.handleChange} required />
+			                  {/*<input type="text" name="registPekerjaanSekarang" placeholder="Pekerjaan Sekarang" value={this.state.registPekerjaanSekarang} onChange={this.handleChange} required />*/}
 			                  <input type="text" name="registNamaReferensi" placeholder="Nama Referensi" value={this.state.registNamaReferensi} onChange={this.handleChange} required />
-			                  <input type="text" name="registAlasan" placeholder="Alasan Ingin Jadi Mitra" value={this.state.registAlasan} onChange={this.handleChange} required />
-			                  <input type="text" name="registHaveCompany" placeholder="Anda Punya Perusahaan ?" value={this.state.registHaveCompany} onChange={this.handleChange} required />
+			                  {/*<input type="text" name="registAlasan" placeholder="Alasan Ingin Jadi Mitra" value={this.state.registAlasan} onChange={this.handleChange} required />*/}
+			                  {/*<input type="text" name="registHaveCompany" placeholder="Anda Punya Perusahaan ?" value={this.state.registHaveCompany} onChange={this.handleChange} required />*/}
 			                  
 			                  <input type="text" name="registHp" placeholder="No HP" value={this.state.registHp} onChange={this.handleChange} required />
 

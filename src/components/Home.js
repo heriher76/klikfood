@@ -199,7 +199,7 @@ class Home extends Component {
 				                            <div className="single-products">
 				                              <div className="productinfo text-center">
 				                                <Link to={"/product/"+item._id}><img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt /></Link>											
-				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) }</h2>
+				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 				                                <p className="homeNameProduk">{ item.name }</p>
 				                                {
 				                                	(this.state.modePenjualan.value === 1) ?
@@ -228,7 +228,7 @@ class Home extends Component {
 				                            <div className="single-products">
 				                              <div className="productinfo text-center">
 				                                <Link to={"/product/"+item._id}><img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt /></Link>											
-				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) }</h2>
+				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 				                                <p className="homeNameProduk">{ item.name }</p>
 				                              	{
 				                                	(this.state.modePenjualan.value === 1) ?
@@ -272,7 +272,7 @@ class Home extends Component {
 				                            <div className="single-products">
 				                              <div className="productinfo text-center">
 				                                <Link to={"/product/"+item._id}><img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt /></Link>											
-				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) }</h2>
+				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 				                                <p className="homeNameProduk">{ item.name }</p>
 				                              	{
 				                                	(this.state.modePenjualan.value === 1) ?
@@ -301,7 +301,7 @@ class Home extends Component {
 				                            <div className="single-products">
 				                              <div className="productinfo text-center">
 				                                <Link to={"/product/"+item._id}><img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt /></Link>											
-				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) }</h2>
+				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 				                                <p className="homeNameProduk">{ item.name }</p>
 				                              	{
 				                                	(this.state.modePenjualan.value === 1) ?
@@ -344,7 +344,7 @@ class Home extends Component {
 				                            <div className="single-products">
 				                              <div className="productinfo text-center">
 				                                <Link to={"/product/"+item._id}><img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt /></Link>											
-				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) }</h2>
+				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 				                                <p className="homeNameProduk">{ item.name }</p>
 				                              	{
 				                                	(this.state.modePenjualan.value === 1) ?
@@ -373,7 +373,7 @@ class Home extends Component {
 				                            <div className="single-products">
 				                              <div className="productinfo text-center">
 				                                <Link to={"/product/"+item._id}><img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt /></Link>											
-				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) }</h2>
+				                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 				                                <p className="homeNameProduk">{ item.name }</p>
 				                              	{
 				                                	(this.state.modePenjualan.value === 1) ?
@@ -418,7 +418,7 @@ class Home extends Component {
 							                            <div className="single-products">
 							                              <div className="productinfo text-center">
 							                                <Link to={"/product/"+item._id}><img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt /></Link>											
-							                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) }</h2>
+							                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 							                                <p className="homeNameProduk">{ item.name }</p>
 							                              	{
 							                                	(this.state.modePenjualan.value === 1) ?
@@ -447,7 +447,7 @@ class Home extends Component {
 							                            <div className="single-products">
 							                              <div className="productinfo text-center">
 							                                <Link to={"/product/"+item._id}><img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt /></Link>											
-							                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) }</h2>
+							                                <h2 className="homePriceProduk">{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 							                                <p className="homeNameProduk">{ item.name }</p>
 							                              	{
 							                                	(this.state.modePenjualan.value === 1) ?

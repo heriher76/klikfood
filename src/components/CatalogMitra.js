@@ -185,7 +185,7 @@ class CatalogMitra extends Component {
 		                  			      	<div className="single-products">
 		                  			        	<div className="productinfo text-center">
 		                  			          		<img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt />
-		                  			          		<h2>Rp. { item.harga_jual }</h2>
+		                  			          		<h2>{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 		                  			          		<p>{ item.name }</p>
 		                  			          		<Link to={"/"+this.props.match.params.mitra+"/"+item._id} className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart" />Lihat</Link>
 		                  			      		</div>
@@ -217,7 +217,7 @@ class CatalogMitra extends Component {
 	                  			      	<div className="single-products">
 	                  			        	<div className="productinfo text-center">
 	                  			          		<img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt />
-	                  			          		<h2>Rp. { item.harga_jual }</h2>
+	                  			          		<h2>{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 	                  			          		<p>{ item.name }</p>
 	                  			          		<a href="#" accesskey={item.berat_kemasan} onClick={this.handleAddToCart} id={item._id + "/" + item.foto_1} title={item.name} lang={item.harga_jual} className="btn btn-default add-to-cart"><i accesskey={item.berat_kemasan} className="fa fa-shopping-cart" id={item._id + "/" + item.foto_1} title={item.name} lang={item.harga_jual} />Add to cart</a>	
 	                  			          	</div>
@@ -249,7 +249,7 @@ class CatalogMitra extends Component {
 		                            <div className="single-products">
 		                              <div className="productinfo text-center">
 		                                <a href="#"><img src={"https://api.klikfood.id/uploads/produk/"+item._id+"/"+item.foto_1} style={{maxHeight: '150px'}} alt /></a>											
-		                                <h2>{ formatter.format(item.harga_jual) }</h2>
+		                                <h2>{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 		                                <p>{ item.name }</p>
 		                                <a href="#" accesskey={item.berat_kemasan} onClick={this.handleAddToCart} id={item._id + "/" + item.foto_1} title={item.name} lang={item.harga_jual} className="btn btn-default add-to-cart"><i accesskey={item.berat_kemasan} className="fa fa-shopping-cart" id={item._id + "/" + item.foto_1} title={item.name} lang={item.harga_jual} />Add to cart</a>
 		                              </div>
@@ -300,13 +300,13 @@ class CatalogMitra extends Component {
 		                      	    <div className="single-products">
 		                      	      <div className="productinfo text-center">
 		                      	        <Link to={"/"+this.props.match.params.mitra+"/"+item._id}><img src={ "https://api.klikfood.id/uploads/produk/" + item._id + "/" + item.foto_1 + "?i=1" } alt="product12" style={{maxHeight: '150px'}} /></Link>
-		                      	        <h2>{ formatter.format(item.harga_jual) }</h2>
+		                      	        <h2>{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 		                      	        <p>{ item.name }</p>
 		                      	        {/*<a href="#" accesskey={item.berat_kemasan} onClick={this.handleAddToCart} id={item._id + "/" + item.foto_1} title={item.name} lang={item.harga_jual} className="btn btn-default add-to-cart"><i accesskey={item.berat_kemasan} className="fa fa-shopping-cart" id={item._id + "/" + item.foto_1} title={item.name} lang={item.harga_jual} />Add to cart</a>*/}
 		                      	      </div>
 		                      	      {/*<div className="product-overlay">
 		                      	        <div className="overlay-content">
-		                      	          <h2>{ formatter.format(item.harga_jual) }</h2>
+		                      	          <h2>{ formatter.format(item.harga_jual) +' / '+ item.satuan }</h2>
 		                      	          <p>{ item.deskripsi }</p>
 		                      	          <p>{item.name}</p>
 		                      	          <Link to={"/"+this.props.match.params.mitra+"/"+item._id} className="btn btn-default add-to-cart"><i className="fa fa-eye" />Lihat</Link>

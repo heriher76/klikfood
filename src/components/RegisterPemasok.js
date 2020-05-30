@@ -158,9 +158,9 @@ class RegisterPemasok extends Component {
 			                  <input type="text" name="registUsername" placeholder="Username" value={this.state.registUsername} onChange={this.handleChange} required />
 			                  <input type="email" name="registEmail" placeholder="Alamat Email" value={this.state.registEmail} onChange={this.handleChange} required />
 			                  <input type="password" name="registPassword" placeholder="Password" value={this.state.registPassword} onChange={this.handleChange} required />
-		                  	  <input type="text" name="registTempat" placeholder="Tempat Lahir" value={this.state.registTempat} onChange={this.handleChange} required />
-			                  <p>Tanggal Lahir: </p>
-			                  <input type="date" name="registTanggalLahir" placeholder="Tanggal Lahir" value={this.state.registTanggalLahir} onChange={this.handleChange} required />
+		                  	  {/*<input type="text" name="registTempat" placeholder="Tempat Lahir" value={this.state.registTempat} onChange={this.handleChange} required />*/}
+			                  {/*<p>Tanggal Lahir: </p>*/}
+			                  {/*<input type="date" name="registTanggalLahir" placeholder="Tanggal Lahir" value={this.state.registTanggalLahir} onChange={this.handleChange} required />*/}
 		                  	  <input type="text" name="registHp" placeholder="No HP" value={this.state.registHp} onChange={this.handleChange} required />
 		                  	  <select name="registJK" onChange={this.handleChange} required>
 							    <option>Pilih Jenis Kelamin</option>

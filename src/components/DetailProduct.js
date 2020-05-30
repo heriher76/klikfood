@@ -25,6 +25,7 @@ class DetailProduct extends Component {
 			berat_kemasan: '',
 			harga_supplyer: '',
 			harga_jual: '',
+			satuan: '',
 			expire: '',
 			deskripsi: '',
 			type: '',
@@ -84,6 +85,7 @@ class DetailProduct extends Component {
 		  		berat_kemasan: response.data.data.berat_kemasan,
 		  		harga_supplyer: response.data.data.harga_supplyer,
 		  		harga_jual: response.data.data.harga_jual,
+		  		satuan: response.data.data.satuan,
 		  		expire: response.data.data.expire,
 		  		deskripsi: response.data.data.deskripsi,
 		  		type: response.data.data.type,
@@ -228,7 +230,7 @@ class DetailProduct extends Component {
 							    </Col>
 							    <Col md={6}>
 							    	<h2>{ this.state.name }</h2>
-							    	<h3 style={{color: 'red'}}>{ formatter.format(this.state.harga_jual) }</h3>
+							    	<h3 style={{color: 'red'}}>{ formatter.format(this.state.harga_jual) + ' / ' + this.state.satuan }</h3>
 							    	<p>{ this.state.deskripsi }</p>
 							    	<button className="btn btn-success" onClick={this.handleAddToCart}>Tambahkan Ke Keranjang </button>
 							    	<button className="btn btn-default" onClick={this.handlePay}>Pesan Sekarang </button>
@@ -245,7 +247,7 @@ class DetailProduct extends Component {
 		                            <div className="single-products">
 		                              <div className="productinfo text-center">
 		                                <a href={"/product/"+product._id}><img src={"https://api.klikfood.id/uploads/produk/"+product._id+"/"+product.foto_1} style={{maxHeight: '150px'}} alt /></a>											
-		                                <h2 className="homePriceProduk">{ formatter.format(product.harga_jual) }</h2>
+		                                <h2 className="homePriceProduk">{ formatter.format(product.harga_jual) + ' / ' + product.satuan }</h2>
 		                                <p className="homeNameProduk">{ product.name }</p>
 		                              	{
 		                                	(this.state.modePenjualan.value === 1) ?
