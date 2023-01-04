@@ -24,7 +24,7 @@
     "react-loaders": "^3.0.1",
     "react-progress-button": "^5.1.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "5.0.1",
     "react-toastify": "^4.5.2",
     "reactstrap": "^7.1.0"
   },
